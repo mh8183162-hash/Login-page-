@@ -5,6 +5,7 @@ import { LoginForm } from './components/LoginForm';
 import { SignupForm } from './components/SignupForm';
 import { ForgotPasswordForm } from './components/ForgotPasswordForm';
 import { UserDashboard } from './components/UserDashboard';
+import { RealAssetWebsite } from './components/RealAssetWebsite';
 import { Toast } from './components/Toast';
 import { Language, AuthMode, UserProfile, ToastMessage } from './types';
 import { translations } from './translations';
@@ -89,6 +90,21 @@ export default function App() {
 
   const t = translations[language];
 
+  // If user is authenticated, render the full Real-World Asset platform!
+  if (currentMode === 'dashboard' && currentUser) {
+    return (
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-950 font-sans">
+        <Toast toasts={toasts} onDismiss={handleDismissToast} />
+        <RealAssetWebsite
+          user={currentUser}
+          language={language}
+          onLogout={handleLogout}
+          showToast={showToast}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen flex flex-col bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors select-none">
       {/* Cinematic Fullscreen Background Image - Vivid & High Contrast */}
@@ -121,17 +137,9 @@ export default function App() {
 
       {/* Main Viewport Content */}
       <main className="relative z-10 flex-1 flex flex-col justify-center items-center py-6 sm:py-10 px-4 sm:px-6">
-        {currentMode === 'dashboard' && currentUser ? (
-          <UserDashboard
-            user={currentUser}
-            language={language}
-            onLogout={handleLogout}
-            showToast={showToast}
-          />
-        ) : (
-          <div className="w-full max-w-5xl rounded-3xl overflow-hidden border border-white/30 dark:border-white/10 bg-white/92 dark:bg-slate-900/90 backdrop-blur-2xl shadow-2xl shadow-black/50 flex flex-col lg:flex-row min-h-[640px] transition-all">
-            {/* Left Column: Visual Security Banner (desktop only) */}
-            <AuthSideBanner language={language} bgImage={activeBg} />
+        <div className="w-full max-w-5xl rounded-3xl overflow-hidden border border-white/30 dark:border-white/10 bg-white/92 dark:bg-slate-900/90 backdrop-blur-2xl shadow-2xl shadow-black/50 flex flex-col lg:flex-row min-h-[640px] transition-all">
+          {/* Left Column: Visual Security Banner (desktop only) */}
+          <AuthSideBanner language={language} bgImage={activeBg} />
 
             {/* Right Column: Interactive Auth Form */}
             <div className="w-full lg:w-1/2 p-6 sm:p-10 xl:p-14 flex flex-col justify-between bg-white/85 dark:bg-slate-900/80 backdrop-blur-xl">
@@ -198,7 +206,6 @@ export default function App() {
               </div>
             </div>
           </div>
-        )}
       </main>
 
       {/* Floating Wallpaper Switcher */}
