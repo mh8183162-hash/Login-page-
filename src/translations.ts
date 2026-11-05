@@ -1,0 +1,222 @@
+export const translations = {
+  en: {
+    brandName: 'SafeAuth',
+    tagline: 'Enterprise-grade identity & access management',
+    signInTitle: 'Welcome back',
+    signInSubtitle: 'Enter your credentials to access your secure workspace.',
+    signUpTitle: 'Create an account',
+    signUpSubtitle: 'Join thousands of professionals securing their business today.',
+    forgotTitle: 'Reset your password',
+    forgotSubtitle: 'Enter your verified email and we will send you a 6-digit recovery code.',
+    otpTitle: 'Verify security code',
+    otpSubtitle: 'We have sent a 6-digit verification code to your email address.',
+    
+    // Inputs
+    fullName: 'Full Name',
+    fullNamePlaceholder: 'e.g. Ali Khan or Sarah Jenkins',
+    email: 'Email address',
+    emailPlaceholder: 'you@company.com',
+    password: 'Password',
+    passwordPlaceholder: 'Enter your password',
+    confirmPassword: 'Confirm Password',
+    confirmPasswordPlaceholder: 'Re-enter your password',
+    rememberMe: 'Remember this device for 30 days',
+    forgotPassword: 'Forgot password?',
+    
+    // Buttons
+    signInBtn: 'Sign In',
+    signingIn: 'Authenticating...',
+    signUpBtn: 'Create Account',
+    creatingAccount: 'Creating account...',
+    sendCodeBtn: 'Send Recovery Code',
+    verifyCodeBtn: 'Verify & Reset Password',
+    backToLogin: 'Back to Sign In',
+    orContinueWith: 'Or continue with',
+    
+    // Links
+    noAccount: "Don't have an account?",
+    signUpLink: 'Create one now',
+    haveAccount: 'Already have an account?',
+    signInLink: 'Sign in here',
+    termsNotice: 'By continuing, you agree to our Terms of Service and Privacy Policy.',
+    acceptTerms: 'I agree to the Terms of Service & Privacy Policy',
+    
+    // Demo accounts
+    quickDemo: 'Quick Demo Accounts',
+    fillUser: 'User: Ali Khan',
+    fillAdmin: 'Admin: Sarah Jenkins',
+    
+    // Password strength
+    strengthWeak: 'Weak',
+    strengthFair: 'Fair',
+    strengthGood: 'Good',
+    strengthStrong: 'Strong',
+    reqLength: 'At least 8 characters',
+    reqNumber: 'At least 1 number (0-9)',
+    reqUppercase: 'At least 1 uppercase letter',
+    reqSpecial: 'At least 1 special character (!@#$%)',
+    passwordsMatch: 'Passwords match',
+    passwordsDontMatch: 'Passwords do not match',
+    
+    // Recovery OTP
+    didntReceiveCode: "Didn't receive the code?",
+    resendIn: 'Resend code in',
+    resendNow: 'Resend Code',
+    enterNewPassword: 'New Password',
+    newPasswordPlaceholder: 'Choose a strong new password',
+    
+    // Dashboard
+    dashboardTitle: 'Account Security Dashboard',
+    dashboardSubtitle: 'Your session is active and protected with hardware-grade TLS encryption.',
+    userProfile: 'User Profile',
+    securityStatus: 'Security Status',
+    activeSessions: 'Active Sessions',
+    signOutBtn: 'Sign Out',
+    role: 'Role',
+    lastLogin: 'Last Login',
+    device: 'Authorized Device',
+    ip: 'Session IP',
+    twoFactor: 'Two-Factor Authentication (2FA)',
+    twoFactorDesc: 'Require authenticator app code on each sign-in',
+    loginAlerts: 'Email Login Notifications',
+    loginAlertsDesc: 'Receive security alerts whenever a new browser signs in',
+    statusSecure: 'Protected & Compliant',
+    changePassword: 'Change Password',
+    manageSessions: 'Manage Sessions',
+    
+    // Visual Highlights (Side banner)
+    bannerHeading: 'Protecting what matters most with Zero-Trust security',
+    bannerText: 'SafeAuth provides seamless single sign-on, biometric passkey compatibility, and automated threat detection for modern engineering teams.',
+    stat1Label: 'Uptime SLA Guarantee',
+    stat1Value: '99.99%',
+    stat2Label: 'Protected Daily Logins',
+    stat2Value: '12M+',
+    stat3Label: 'End-to-End Encryption',
+    stat3Value: 'AES-256',
+    testimonialQuote: 'SafeAuth reduced our onboarding friction by 75% while keeping our SOC2 compliance strictly audit-proof.',
+    testimonialAuthor: 'Hamza Tariq',
+    testimonialRole: 'VP of Engineering at FinEdge Global',
+
+    // Validation
+    invalidEmail: 'Please enter a valid email address.',
+    shortPassword: 'Password must be at least 8 characters long.',
+    mustAcceptTerms: 'Please accept the Terms of Service to continue.',
+    invalidCode: 'Please enter all 6 digits of the verification code.',
+    loginSuccess: 'Successfully authenticated! Welcome back.',
+    accountCreated: 'Account created successfully! Welcome aboard.',
+    codeSent: 'A 6-digit recovery code has been sent to your email.',
+    passwordResetSuccess: 'Password reset successfully! Please sign in with your new password.',
+    loggedOut: 'You have been signed out successfully.',
+    demoFilled: 'Demo credentials filled in!'
+  },
+  ur: {
+    brandName: 'سیف آتھ',
+    tagline: 'محفوظ اور جدید لاگ ان و سیکیورٹی پورٹل',
+    signInTitle: 'خوش آمدید!',
+    signInSubtitle: 'اپنے محفوظ ورک اسپیس تک رسائی کے لیے اپنی اسناد درج کریں۔',
+    signUpTitle: 'نیا اکاؤنٹ بنائیں',
+    signUpSubtitle: 'آج ہی ہزاروں پیشہ ور افراد کے ساتھ شامل ہوں اور محفوظ رہیں۔',
+    forgotTitle: 'پاس ورڈ دوبارہ ترتیب دیں',
+    forgotSubtitle: 'اپنا تصدیق شدہ ای میل درج کریں، ہم 6 ہندسوں کا کوڈ بھیجیں گے۔',
+    otpTitle: 'سیکیورٹی کوڈ کی تصدیق',
+    otpSubtitle: 'ہم نے آپ کے ای میل ایڈریس پر 6 ہندسوں کا تصدیقی کوڈ بھیجا ہے۔',
+    
+    // Inputs
+    fullName: 'پورا نام',
+    fullNamePlaceholder: 'مثلاً: علی خان یا سارہ احمد',
+    email: 'ای میل ایڈریس',
+    emailPlaceholder: 'you@company.com',
+    password: 'پاس ورڈ',
+    passwordPlaceholder: 'اپنا خفیہ پاس ورڈ درج کریں',
+    confirmPassword: 'پاس ورڈ کی تصدیق کریں',
+    confirmPasswordPlaceholder: 'پاس ورڈ دوبارہ درج کریں',
+    rememberMe: 'اس ڈیوائس کو 30 دن تک یاد رکھیں',
+    forgotPassword: 'پاس ورڈ بھول گئے؟',
+    
+    // Buttons
+    signInBtn: 'لاگ ان کریں',
+    signingIn: 'تصدیق ہو رہی ہے...',
+    signUpBtn: 'اکاؤنٹ بنائیں',
+    creatingAccount: 'اکاؤنٹ تیار کیا جا رہا ہے...',
+    sendCodeBtn: 'ریکوری کوڈ بھیجیں',
+    verifyCodeBtn: 'تصدیق اور پاس ورڈ تبدیل کریں',
+    backToLogin: 'واپس لاگ ان کی طرف جائیں',
+    orContinueWith: 'یا ان کے ذریعے لاگ ان کریں',
+    
+    // Links
+    noAccount: 'کیا آپ کا اکاؤنٹ نہیں ہے؟',
+    signUpLink: 'نیا اکاؤنٹ بنائیں',
+    haveAccount: 'کیا پہلے سے اکاؤنٹ موجود ہے؟',
+    signInLink: 'یہاں لاگ ان کریں',
+    termsNotice: 'آگے بڑھ کر، آپ ہماری سروس کی شرائط اور رازداری کی پالیسی سے اتفاق کرتے ہیں۔',
+    acceptTerms: 'میں شرائط و ضوابط اور پرائیویسی پالیسی سے متفق ہوں',
+    
+    // Demo accounts
+    quickDemo: 'فوری ٹیسٹ اکاؤنٹس',
+    fillUser: 'صارف: علی خان',
+    fillAdmin: 'ایڈمن: سارہ احمد',
+    
+    // Password strength
+    strengthWeak: 'کمزور',
+    strengthFair: 'مناسب',
+    strengthGood: 'بہتر',
+    strengthStrong: 'مضبوط ترین',
+    reqLength: 'کم از کم 8 حروف',
+    reqNumber: 'کم از کم 1 نمبر (0-9)',
+    reqUppercase: 'کم از کم 1 بڑا حرف (A-Z)',
+    reqSpecial: 'کم از کم 1 خاص علامت (!@#$%)',
+    passwordsMatch: 'پاس ورڈ مماثل ہیں',
+    passwordsDontMatch: 'پاس ورڈ مماثل نہیں ہیں',
+    
+    // Recovery OTP
+    didntReceiveCode: 'کوڈ موصول نہیں ہوا؟',
+    resendIn: 'دوبارہ کوڈ بھیجیں:',
+    resendNow: 'دوبارہ کوڈ بھیجیں',
+    enterNewPassword: 'نیا پاس ورڈ',
+    newPasswordPlaceholder: 'نیا مضبوط پاس ورڈ درج کریں',
+    
+    // Dashboard
+    dashboardTitle: 'صارف سیکیورٹی ڈیش بورڈ',
+    dashboardSubtitle: 'آپ کا سیشن فعال ہے اور اعلیٰ درجے کے TLS اینکرپشن کے ساتھ محفوظ ہے۔',
+    userProfile: 'صارف پروفائل',
+    securityStatus: 'حفاظتی صورتحال',
+    activeSessions: 'فعال سیشنز',
+    signOutBtn: 'لاگ آؤٹ کریں',
+    role: 'عہدہ / کردار',
+    lastLogin: 'آخری لاگ ان',
+    device: 'مجاز ڈیوائس',
+    ip: 'سیشن آئی پی',
+    twoFactor: 'ٹو فیکٹر تصدیق (2FA)',
+    twoFactorDesc: 'ہر بار لاگ ان پر اضافی حفاظتی کوڈ درکار ہوگا',
+    loginAlerts: 'ای میل لاگ ان الرٹس',
+    loginAlertsDesc: 'نئے براؤزر سے لاگ ان ہونے پر فوراً اطلاع ملے گی',
+    statusSecure: 'محفوظ اور فعال',
+    changePassword: 'پاس ورڈ تبدیل کریں',
+    manageSessions: 'تمام سیشنز کا نظم کریں',
+    
+    // Visual Highlights (Side banner)
+    bannerHeading: 'زیرو ٹرسٹ سیکیورٹی کے ساتھ اپنے ڈیٹا کی حفاظت کریں',
+    bannerText: 'سیف آتھ جدید انجینیئرنگ اور کاروباری اداروں کو فوری سنگل سائن آن، بائیو میٹرک تصدیق اور خودکار حفاظتی تحفظ فراہم کرتا ہے۔',
+    stat1Label: 'اپ ٹائم گارنٹی',
+    stat1Value: '99.99%',
+    stat2Label: 'روزانہ محفوظ لاگ انز',
+    stat2Value: '12M+',
+    stat3Label: 'اینڈ ٹو اینڈ اینکرپشن',
+    stat3Value: 'AES-256',
+    testimonialQuote: 'سیف آتھ نے ہماری سیکیورٹی کو بے حد آسان اور فول پروف بنا دیا ہے۔',
+    testimonialAuthor: 'حمزہ طارق',
+    testimonialRole: 'وی پی انجینئرنگ، فن ایج گلوبل',
+
+    // Validation
+    invalidEmail: 'براہ کرم ایک درست ای میل پتہ درج کریں۔',
+    shortPassword: 'پاس ورڈ کم از کم 8 حروف پر مشتمل ہونا چاہیے۔',
+    mustAcceptTerms: 'براہ کرم جاری رکھنے کے لیے شرائط کو قبول کریں۔',
+    invalidCode: 'براہ کرم تصدیقی کوڈ کے تمام 6 ہندسے درج کریں۔',
+    loginSuccess: 'کامیابی سے لاگ ان ہو گئے! خوش آمدید۔',
+    accountCreated: 'نیا اکاؤنٹ کامیابی سے بن گیا! مبارک ہو۔',
+    codeSent: 'آپ کے ای میل پر 6 ہندسوں کا کوڈ بھیج دیا گیا ہے۔',
+    passwordResetSuccess: 'پاس ورڈ کامیابی سے تبدیل ہو گیا! اب نئے پاس ورڈ کے ساتھ لاگ ان کریں۔',
+    loggedOut: 'آپ کامیابی سے لاگ آؤٹ ہو چکے ہیں۔',
+    demoFilled: 'ٹیسٹ لاگ ان کی تفصیلات درج ہو گئیں!'
+  }
+};

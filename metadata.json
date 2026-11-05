@@ -1,0 +1,6 @@
+{
+  "name": "SafeAuth Portal",
+  "description": "A modern, secure login and authentication portal featuring sign in, account registration, password recovery, social logins, Urdu and English bilingual support, and dark mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
